@@ -1,0 +1,16 @@
+.welcome-section {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(../../images/home-welcome-background.jpg);
+}
+
+.info-section {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/home-info-background.jpg);
+}
+
+

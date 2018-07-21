@@ -1,0 +1,55 @@
+{
+    "saveUser": 
+            {
+                "name": "saveUser",
+                "value": "INSERT INTO MY_CAL.USERS (FULL_NAME, EMAIL, USERNAME, PASSWORD) VALUES($1, $2, $3, $4);"
+            },
+
+    "updateUser":
+            {
+                "name": "updateUser",
+                "value": "UPDATE MY_CAL.USERS SET FULL_NAME = $1, EMAIL = $2, USERNAME = $3, PASSWORD = $4 WHERE ID = $5;"
+            },
+
+    "findUserByUsername": 
+            {
+                "name": "findUserByUsername",
+                "value": "SELECT ID, FULL_NAME, EMAIL, USERNAME, PASSWORD, G_REFRESH_TOKEN, G_REFRESH_TOKEN_ACTIVATED FROM MY_CAL.USERS WHERE USERNAME = $1;"
+            },
+
+    "updateGoogleGalendarRefreshToken":
+            {
+                "name": "updateGoogleGalendarRefreshToken",
+                "value": "UPDATE MY_CAL.USERS SET G_REFRESH_TOKEN = $1, G_REFRESH_TOKEN_ACTIVATED = $2  WHERE ID = $3;"
+            },
+
+    "saveEvent":
+            {
+                "name": "saveEvent",
+                "value": "INSERT INTO MY_CAL.EVENTS (EVENT_TITLE, EVENT_TYPE, EVENT_START_TIME, EVENT_END_TIME, EVENT_DATE, G_CALENDAR_ID, G_EVENT_ID, USER_ID) VALUES($1, $2, $3, $4, $5, $6, $7, $8);"
+            },
+
+    "findAllEventsByUserId":
+            {
+                "name": "findAllEventsByUserId",
+                "value": "SELECT * FROM MY_CAL.EVENTS WHERE USER_ID = $1;"
+            },
+       
+    "findEventById":
+            {
+                "name": "findEventById",
+                "value": "SELECT * FROM MY_CAL.EVENTS WHERE ID = $1;"
+            },
+
+    "deleteEvent":
+            {
+                "name": "deleteEvent",
+                "value": "DELETE FROM MY_CAL.EVENTS WHERE ID = $1;"
+            },
+            
+    "updateEvent":
+            {
+              "name": "updateEvent",
+              "value": "UPDATE MY_CAL.EVENTS SET EVENT_TITLE = $1, EVENT_TYPE = $2, EVENT_START_TIME = $3, EVENT_END_TIME = $4, EVENT_DATE = $5 WHERE ID = $6;"
+            }
+}

@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(242, 242, 242);
+}
+
+p, h1, h2, h3, a, span, label, th, td {
+    font-family: 'Roboto', sans-serif;
+}
+
+.parallax-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.navigation-menu {
+    /* Height is 51.333px */
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: rgb(102, 153, 255);
+    box-shadow: 2px 2px 20px rgb(51, 51, 51);
+}
+
+.navigation-menu li:not(.login-logout-option){
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.navigation-menu li:hover:not(.selected-option) {
+    background: rgb(153, 204, 255);
+}
+
+.navigation-menu a, p {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.login-logout-option {
+    float: right;
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.selected-navigation-option {
+    background: rgb(153, 204, 255);
+}
+
+.selected-dropdown-option {
+    background: rgb(226, 234, 241) !important; 
+}
+
+.dropdown p {
+    cursor: default;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    background: rgb(204, 214, 221);
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background: rgb(226, 234, 241);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.inner-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+}
+
+.general-form-input {
+    display: block;
+    width: 250px;
+    line-height: 35px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+.message-wrapper {
+    display: block;
+    width: 250px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.inner-message-wrapper {
+    display: block;
+    float: right;
+    width: 250px;
+    height: 35px;
+}
+
+.warning-message {
+    float: left;
+    color: rgb(255, 102, 102);
+}
+
+.box-wrapper {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 50%;
+}
+
+.box {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    border: 2px outset rgb(0, 0, 77);
+    display: table;
+}
+
+.box p {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    font-size: 30px;
+    color: rgb(0, 0, 77);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.selected-row {
+    background: rgb(204, 214, 221);
+}
